@@ -1,0 +1,28 @@
+.hero {
+  background: {
+    color: #333377;
+    image: url('/public/images/night-sky-mobile.jpg');
+    size: cover;
+    position: center bottom;
+  }
+  padding-bottom: 150%;
+  width: 100%;
+  height: 0;
+  z-index: 0;
+
+  @include breakpoint (medium up) {
+    background-image: url('/public/images/night-sky.jpg');
+    padding-bottom: 45%;
+  }
+}
+
+.hero__big-text {
+  display: block;
+  padding-top: 100%;
+  color: white;
+
+  @include breakpoint (medium up) {
+    padding-top: 15%;
+    font-size: 48px;
+  }
+}

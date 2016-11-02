@@ -1,0 +1,13 @@
+.content-section {
+  padding: 100px 0;
+}
+
+.content-section--services {
+  background: $color--athens-gray;
+
+  p,
+  h2,
+  h3 {
+    color: $color--comet;
+  }
+}

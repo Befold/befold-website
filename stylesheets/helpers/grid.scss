@@ -1,0 +1,32 @@
+$grid-gutter: 12px !default;
+$grid-column-count: 12 !default;
+
+$-column-as-percent: $grid-column-count / 100;
+
+@mixin column {
+  padding: 0 $grid-gutter;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.grid-column {
+  @include column;
+}
+
+.grid-row {
+  display: flex;
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+
+@each $breakpoint in $breakpoints {
+  @for $size from 1 through $grid-column-count {
+    .grid-col-#{$size}-#{nth($breakpoint, 1)} {
+      @include column;
+
+      @include breakpoint(nth($breakpoint, 1)) {
+        flex-basis: percentage($size / $grid-column-count);
+      }
+    }
+  }
+}
