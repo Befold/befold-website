@@ -1,7 +1,10 @@
 .footer {
-  background: #353535;
+  background: $color--athens-gray;
+  padding-top: 40px;
+}
 
-  h2 {
-    color: $color--athens-gray;
-  }
+.footer__copyright {
+  padding: 40px 0 10px;
+
+  font-size: 12px;
 }

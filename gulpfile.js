@@ -5,7 +5,9 @@ const babel = require('babelify');
 const stripDebug = require('gulp-strip-debug');
 const uglify = require('gulp-uglify');
 const source = require('vinyl-source-stream');
+const buffer = require('vinyl-buffer');
 const gulpIf = require('gulp-if');
+const cleanCss = require('gulp-clean-css');
 
 const SASS_PATHS = [];
 // .concat(require('bourbon').includePaths);
@@ -15,9 +17,10 @@ gulp.task('build:js', function () {
   return browserify('./app/app.js')
     .transform(babel.configure({ presets: ['es2015'] }))
     .bundle()
-    .pipe(gulpIf(isProductionBuild, uglify()))
-    .pipe(gulpIf(isProductionBuild, stripDebug()))
     .pipe(source('app.js'))
+    .pipe(buffer())
+    .pipe(gulpIf(isProductionBuild, stripDebug()))
+    .pipe(gulpIf(isProductionBuild, uglify()))
     .pipe(gulp.dest('public/dist/'));
 });
 
@@ -27,6 +30,7 @@ gulp.task('build:css', function () {
       includePaths: SASS_PATHS,
       onError: console.error
     }))
+    .pipe(gulpIf(isProductionBuild, cleanCss()))
     .pipe(gulp.dest('public/dist/'));
 });
 

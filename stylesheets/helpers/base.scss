@@ -1,8 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   background: $color--gallery;
 }
 
@@ -17,14 +20,10 @@ body {
   }
 }
 
-.grid-row {
+.content {
   padding: 0 20px;
 
   @include breakpoint (medium) {
     padding: 0 50px;
-  }
-
-  .grid-row {
-    padding: 0;
   }
 }

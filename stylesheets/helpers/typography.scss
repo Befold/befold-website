@@ -1,7 +1,7 @@
 h1 {
   font-family: 'Roboto Slab', serif;
-  color: $color--cod-gray;
-  font-weight: 200;
+  color: $color--comet;
+  font-weight: 300;
 }
 
 html,
@@ -12,6 +12,21 @@ h5,
 h6,
 p {
   font-family: 'Open Sans', sans-serif;
-  color: $color--mine-shaft;
-  font-weight: 200;
+  color: $color--comet;
+  font-weight: 300;
+}
+
+a {
+  color: $color--punch;
+  text-decoration: none;
+  transition: opacity 0.1s ease-out;
+
+  &:visited {
+    color: $color--punch;
+  }
+
+  &:hover {
+    opacity: 0.8;
+    font-weight: 400;
+  }
 }

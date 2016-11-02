@@ -22,6 +22,8 @@ class DefaultLayout extends React.Component {
 
             {this.props.children}
           </div>
+
+          <script src="/public/dist/app.js" type="text/javascript" />
         </body>
       </html>
     );

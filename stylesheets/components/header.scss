@@ -13,11 +13,13 @@ $header-height: 75px;
     position: fixed;
     top: 0;
     left: 0;
-    background: black;
+    display: flex;
+    background: $color--punch;
     width: 100%;
     max-width: 1140px;
     min-width: 320px;
     height: $header-height;
+    align-items: center;
 
     @include breakpoint (xxlarge) {
       max-width: 1280px;
@@ -29,8 +31,14 @@ $header-height: 75px;
   width: 150px;
   transform: translateY(28px);
   z-index: 100;
+  transition: all .2s ease-out;
 
   @include breakpoint (small only) {
     transform: translateY(80px);
+  }
+
+  &.header__logo--tucked {
+    width: 80px;
+    transform: translateY(0);
   }
 }
