@@ -1,7 +1,7 @@
 module.exports = function (env) {
   switch (env) {
-    'PRODUCTION': return 80;
-    'production': return 80;
+    case 'PRODUCTION': return 80;
+    case 'production': return 80;
     default: return 3000;
   }
 }
