@@ -8,7 +8,7 @@ module.exports = function () {
           <div className="grid-col-12-small">
             <h2>Get in touch</h2>
 
-            <p>Tell us about your project, yourself, or just a nice story.</p>
+            <p>Tell us about your project. We’d love to know how we could help.</p>
 
             <a href="mailto:hello@befold.us">hello@befold.us</a>
 

@@ -16,7 +16,7 @@ module.exports = function () {
 
             <h3>Rapid Prototyping</h3>
 
-            <p>Build your proof of concept quickly. We'll help you define your MVP, and get your idea off the ground.</p>
+            <p>Build your proof of concept quickly. We’ll help you define your MVP and get your idea off the ground in record time. </p>
           </div>
 
           <div className="grid-col-6-small grid-col-3-medium">
@@ -24,7 +24,7 @@ module.exports = function () {
 
             <h3>Product Design and Development</h3>
 
-            <p>Put our smarts to good use. We love problem solving and delivering software.</p>
+            <p>Put our smarts to good use. Problem solving and delivering outstanding digital solutions is our passion.</p>
           </div>
 
           <div className="grid-col-6-small grid-col-3-medium">
@@ -32,7 +32,7 @@ module.exports = function () {
 
             <h3>Engineering as a Service</h3>
 
-            <p>Need extra capacity? Many hands make light work, and Befold has extra hands.</p>
+            <p>Need extra capacity? Many hands make light work and Befold has those extra hands.</p>
           </div>
 
           <div className="grid-col-6-small grid-col-3-medium">
@@ -40,7 +40,7 @@ module.exports = function () {
 
             <h3>Guidance and Mentoring</h3>
 
-            <p>Improve development velocity, something something blah blah.</p>
+            <p>Improve processes and development velocity by getting the ‘know-how’ from some of freshest minds in the industry. The right knowledge will help you succeed.</p>
           </div>
         </div>
       </div>
