@@ -1,5 +1,6 @@
 const React = require('react');
 const Header = require('../components/header');
+const Ga = require('../partials/ga');
 const headIncludes = require('../partials/head-includes');
 
 class DefaultLayout extends React.Component {
@@ -17,6 +18,8 @@ class DefaultLayout extends React.Component {
         </head>
 
         <body>
+          <Ga />
+
           <div className="container">
             <Header />
 
